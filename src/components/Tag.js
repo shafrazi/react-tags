@@ -48,6 +48,7 @@ const Tag = (props) => {
       style={{
         opacity,
         cursor: canDrag(props) ? 'move' : 'auto',
+        backgroundColor: props.tag.bgColor
       }}
       onClick={props.onTagClicked}
       onTouchStart={props.onTagClicked}>
